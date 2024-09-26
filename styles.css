@@ -241,3 +241,53 @@ body::-webkit-scrollbar {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
   }
+/* CSS Responsivo para Dispositivos Móveis */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header {
+        padding: 30px 0;
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .header h2 {
+        font-size: 1.2em;
+    }
+
+    .section {
+        padding: 20px; /* Reduzir padding nas seções */
+    }
+
+    .section h3 {
+        font-size: 1.8em;
+    }
+
+    .section p {
+        font-size: 1em; /* Ajustar tamanho do texto */
+        line-height: 1.5; /* Melhorar legibilidade */
+    }
+
+    .btn {
+        padding: 10px 15px; /* Ajustar tamanho do botão */
+        font-size: 0.9em; /* Tamanho da fonte dos botões */
+    }
+
+    .back-to-top {
+        width: 100%; /* Botão ocupa a largura total */
+        padding: 15px;
+        font-size: 1em; /* Aumentar o tamanho da fonte */
+    }
+
+    footer {
+        padding: 20px 0; /* Reduzir o padding do rodapé */
+    }
+
+    .whatsapp-link {
+        padding: 10px; /* Ajustar o padding do link do WhatsApp */
+    }
+}
