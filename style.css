@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10%;
+    background-color: #222222;
+    color: white;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    color: #f7600e;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.hero-content button {
+    background-color: #f7600e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-image img {
+    max-width: 300px;
+    background-color: #1c1c1c;
+    border-radius: 100%;
+}
+.hero-content p{
+    text-align: justify;
+    width: 80%;
+}
+.section {
+    padding: 60px 10%;
+}
+
+.dark-section {
+    background-color: #222222;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f7600e;
+}
+
+.section p {
+    font-size: 18px;
+    color: #bbbbbb;
+}
+
+.footer {
+    background-color: #0d0d0d;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer button {
+    background-color: #f7600e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    color: white;
+    text-align: center;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    cursor: pointer;
+}
+/* Seção de Habilidades */
+.skill-container {
+    margin: 30px 0;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.skill-bar .progress {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f7600e;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.contato{
+    background-color: #f7600e;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #f7600e;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #222;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #f7600e;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #222;  /* creates padding around scroll thumb */
+  }
+
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
