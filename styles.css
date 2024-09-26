@@ -241,53 +241,64 @@ body::-webkit-scrollbar {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
   }
-/* CSS Responsivo para Dispositivos Móveis */
+  /* Estilo base para a imagem do perfil */
+.profile-pic {
+    text-align: center; /* Centraliza a imagem */
+    margin: 20px 0; /* Margem superior e inferior para espaçamento */
+}
+
+.profile-pic img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Deixa a imagem circular, se desejar */
+}
+
+/* Seções de conteúdo */
+.section {
+    padding: 20px; /* Padding interno para as seções */
+    border: 1px dashed #784cfb; /* Borda tracejada nas seções */
+    border-radius: 20px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento entre as seções */
+}
+
+/* Estilo do texto */
+.section h3 {
+    font-size: 1.5em; /* Tamanho do título das seções */
+}
+
+.section p {
+    font-size: 0.9em; /* Tamanho do texto */
+    line-height: 1.4; /* Aumentar a altura da linha para legibilidade */
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Estilo para dispositivos móveis */
 @media (max-width: 768px) {
-    .container {
-        width: 95%;
+    body {
+        
     }
 
     .header {
-        padding: 30px 0;
+        padding: 30px 0; /* Reduzir padding do cabeçalho */
     }
 
-    .header h1 {
-        font-size: 2.5em;
-    }
-
-    .header h2 {
-        font-size: 1.2em;
-    }
-
-    .section {
-        padding: 20px; /* Reduzir padding nas seções */
-    }
-
-    .section h3 {
-        font-size: 1.8em;
-    }
-
-    .section p {
-        font-size: 1em; /* Ajustar tamanho do texto */
-        line-height: 1.5; /* Melhorar legibilidade */
-    }
-
-    .btn {
-        padding: 10px 15px; /* Ajustar tamanho do botão */
+    .btn, .back-to-top {
+        padding: 10px 15px; /* Ajustar padding dos botões */
         font-size: 0.9em; /* Tamanho da fonte dos botões */
     }
 
     .back-to-top {
         width: 100%; /* Botão ocupa a largura total */
-        padding: 15px;
-        font-size: 1em; /* Aumentar o tamanho da fonte */
+        margin-top: 20px; /* Margem acima do botão */
+        text-align: center; /* Centralizar texto */
     }
 
     footer {
-        padding: 20px 0; /* Reduzir o padding do rodapé */
+        padding: 20px 0; /* Reduzir padding do rodapé */
     }
-
-    .whatsapp-link {
-        padding: 10px; /* Ajustar o padding do link do WhatsApp */
+    .profile-pic img {
+        border-radius: 50%;
+        max-width: 0px;
+        background-color: #f7f7f7;
     }
 }
