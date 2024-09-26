@@ -5,184 +5,117 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f6f7fb;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: white;
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-    height: 100%; /* Ajustando para 100% da altura */
-}
-.container_{
-    border: dashed;
-    border-color: #784cfb;
-    border-width: 0.5px;
-    border-radius: 20px;
+header {
+    background-color: #222222;
     padding: 20px;
-    box-sizing: border-box;
-}
-.header {
-    background-color: #784cfb;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.intro {
-    flex: 1;
+header .logo {
+    font-size: 24px;
+    color: white;
 }
 
-.intro h1 {
-    font-size: 3em;
-    font-weight: 600;
+header ul {
+    list-style: none;
+    display: flex;
 }
 
-.intro h2 {
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #f6f7fb;
+header ul li {
+    margin: 0 15px;
 }
 
-.intro p {
-    margin: 20px 0;
-    font-size: 1.2em;
-}
-
-.section {
-    /* border: 1px dashed #784cfb; Alterando a cor da borda para a mesma do cabeçalho */
-    padding: 30px; /* Padding aumentado para melhor visibilidade das bordas */
-    margin-bottom: 20px; /* Espaçamento entre as seções */
-    border-radius: 20px; Bordas arredondadas
-    text-align: justify; /* Justificando o texto */
-}
-
-.highlight {
-    font-weight: bold;
-    color: #ffc60b; /* Cor para enfatizar palavras */
-}
-
-.btn {
-    padding: 12px 20px;
-    border-radius: 30px;
+header ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 20px;
+    font-size: 16px;
 }
 
-.primary-btn {
-    background-color: #f6f7fb;
-    color: #784cfb;
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10%;
+    background-color: #222222;
+    color: white;
 }
 
-.secondary-btn {
-    background-color: transparent;
-    border: 2px solid #f6f7fb;
-    color: #f6f7fb;
+.hero-content {
+    max-width: 50%;
 }
 
-.primary-btn:hover {
-    background-color: #ddd;
+.hero-content h1 {
+    font-size: 48px;
 }
 
-.secondary-btn:hover {
-    background-color: #784cfb;
-    color: #f6f7fb;
-    border-color: #f6f7fb;
+.hero-content h2 {
+    font-size: 36px;
+    color: #f7600e;
 }
 
-.profile-pic img {
-    border-radius: 50%;
-    max-width: 200px;
-    background-color: #f7f7f7;
+.hero-content p {
+    font-size: 20px;
+    margin: 20px 0;
 }
 
-.skills {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.skills h3 {
-    font-size: 2em;
-    color: #784cfb;
-    margin-bottom: 40px;
-}
-
-.skills-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.skill h4 {
-    margin-bottom: 10px;
-}
-
-.progress-bar {
-    background-color: #ddd;
-    height: 10px;
-    border-radius: 5px;
-}
-
-.progress {
-    height: 100%;
-    background-color: #784cfb;
-    border-radius: 5px;
-}
-
-.experience {
-    background-color: #f6f7fb;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.timeline {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.timeline-item h4 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #784cfb;
-    color: #fff;
-    padding: 30px 0;
-    text-align: center;
-}
-
-.back-to-top {
-    display: block;
-    margin: 20px auto;
-    padding: 12px 20px;
-    background-color: #007bff;
-    color: #fff;
+.hero-content button {
+    background-color: #f7600e;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+}
+
+.hero-image img {
+    max-width: 300px;
+    background-color: #1c1c1c;
+    border-radius: 100%;
+}
+.hero-content p{
+    text-align: justify;
+    width: 80%;
+}
+.section {
+    padding: 60px 10%;
+}
+
+.dark-section {
+    background-color: #222222;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f7600e;
+}
+
+.section p {
+    font-size: 18px;
+    color: #bbbbbb;
+}
+
+.footer {
+    background-color: #0d0d0d;
+    padding: 30px;
     text-align: center;
 }
 
-.back-to-top:hover {
-    background-color: #0056b3;
+.footer button {
+    background-color: #f7600e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
 
-/* Modal styles */
 .modal {
     display: none;
     position: fixed;
@@ -191,114 +124,87 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #333;
     margin: 15% auto;
     padding: 20px;
-    border-radius: 10px;
+    border: 1px solid #888;
     width: 80%;
-    max-width: 500px;
+    max-width: 400px;
+    color: white;
+    text-align: center;
 }
 
 .close {
-    color: #aaa;
+    color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover {
-    color: #000;
+.close:hover,
+.close:focus {
+    color: #bbb;
+    cursor: pointer;
+}
+/* Seção de Habilidades */
+.skill-container {
+    margin: 30px 0;
 }
 
-.whatsapp-link {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #25d366;
+.skill-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.skill-bar .progress {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f7600e;
     color: white;
-    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.contato{
+    background-color: #f7600e;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 5px;
 }
-
-.whatsapp-link:hover {
-    background-color: #1da853;
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #f7600e;
 }
-
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
   }
   
   body::-webkit-scrollbar-track {
-    background: #FFF;        /* color of the tracking area */
+    background: #222;        /* color of the tracking area */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #784cfb;    /* color of the scroll thumb */
+    background-color: #f7600e;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+    border: 3px solid #222;  /* creates padding around scroll thumb */
   }
-  /* Estilo base para a imagem do perfil */
-.profile-pic {
-    text-align: center; /* Centraliza a imagem */
-    margin: 20px 0; /* Margem superior e inferior para espaçamento */
-}
 
-.profile-pic img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 50%; /* Deixa a imagem circular, se desejar */
-}
-
-/* Seções de conteúdo */
-.section {
-    padding: 20px; /* Padding interno para as seções */
-    border: 1px dashed #784cfb; /* Borda tracejada nas seções */
-    border-radius: 20px; /* Bordas arredondadas */
-    margin-bottom: 20px; /* Espaçamento entre as seções */
-}
-
-/* Estilo do texto */
-.section h3 {
-    font-size: 1.5em; /* Tamanho do título das seções */
-}
-
-.section p {
-    font-size: 0.9em; /* Tamanho do texto */
-    line-height: 1.4; /* Aumentar a altura da linha para legibilidade */
-    text-align: justify; /* Justifica o texto */
-}
-
-/* Estilo para dispositivos móveis */
 @media (max-width: 768px) {
-    body {
-        
+    #hero {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .header {
-        padding: 30px 0; /* Reduzir padding do cabeçalho */
-    }
-
-    .btn, .back-to-top {
-        padding: 10px 15px; /* Ajustar padding dos botões */
-        font-size: 0.9em; /* Tamanho da fonte dos botões */
-    }
-
-    .back-to-top {
-        width: 100%; /* Botão ocupa a largura total */
-        margin-top: 20px; /* Margem acima do botão */
-        text-align: center; /* Centralizar texto */
-    }
-
-    footer {
-        padding: 20px 0; /* Reduzir padding do rodapé */
-    }
-    .profile-pic img {
-        border-radius: 50%;
-        max-width: 0px;
-        background-color: #f7f7f7;
+    .hero-image img {
+        max-width: 100%;
+        margin-top: 20px;
     }
 }
