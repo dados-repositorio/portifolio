@@ -1,18 +1,18 @@
-// Abrir e fechar o modal
-const contactButton = document.getElementById("contactButton");
-const modal = document.getElementById("contactModal");
-const closeModal = document.getElementsByClassName("close")[0];
+// Modal
+const modal = document.getElementById("modalContato");
+const btnModal = document.getElementById("btnModal");
+const span = document.getElementsByClassName("close")[0];
 
-contactButton.onclick = function () {
+btnModal.onclick = function() {
     modal.style.display = "block";
-};
+}
 
-closeModal.onclick = function () {
+span.onclick = function() {
     modal.style.display = "none";
-};
+}
 
-window.onclick = function (event) {
-    if (event.target == modal) {
+window.onclick = function(event) {
+    if (event.target === modal) {
         modal.style.display = "none";
     }
-};
+}
