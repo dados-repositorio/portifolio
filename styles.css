@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%; /* Ajustando para 100% da altura */
+}
+.container_{
+    border: dashed;
+    border-color: #784cfb;
+    border-width: 0.5px;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.header {
+    background-color: #784cfb;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    flex: 1;
+}
+
+.intro h1 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.intro h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #f6f7fb;
+}
+
+.intro p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.section {
+    /* border: 1px dashed #784cfb; Alterando a cor da borda para a mesma do cabeçalho */
+    padding: 30px; /* Padding aumentado para melhor visibilidade das bordas */
+    margin-bottom: 20px; /* Espaçamento entre as seções */
+    border-radius: 20px; Bordas arredondadas
+    text-align: justify; /* Justificando o texto */
+}
+
+.highlight {
+    font-weight: bold;
+    color: #ffc60b; /* Cor para enfatizar palavras */
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.primary-btn {
+    background-color: #f6f7fb;
+    color: #784cfb;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid #f6f7fb;
+    color: #f6f7fb;
+}
+
+.primary-btn:hover {
+    background-color: #ddd;
+}
+
+.secondary-btn:hover {
+    background-color: #784cfb;
+    color: #f6f7fb;
+    border-color: #f6f7fb;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    max-width: 200px;
+    background-color: #f7f7f7;
+}
+
+.skills {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills h3 {
+    font-size: 2em;
+    color: #784cfb;
+    margin-bottom: 40px;
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill h4 {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #784cfb;
+    border-radius: 5px;
+}
+
+.experience {
+    background-color: #f6f7fb;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.timeline-item h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #784cfb;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.back-to-top {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.whatsapp-link:hover {
+    background-color: #1da853;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #FFF;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #784cfb;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+  }
