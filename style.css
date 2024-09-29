@@ -1,0 +1,348 @@
+html{ width: 100%; height: 100%;}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* overflow: hidden; */
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #222;
+}
+::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: 20px;
+    background-color: #1cffc2;
+}
+article{
+    width: 100%;
+    height: 100%;
+}
+aside{
+    width: 100%;
+    height: 920px; /* Basicamente da altura da tela */
+}
+aside#inicio{
+    background: #222;
+}
+aside#meio{
+    background: #3f3f3f;
+    height: 500px;
+}
+header{
+    width: 100%;
+    height: 80px;
+    /* background-color: #3f3f3f; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+nav{
+    column-gap: 50px;
+    width: 80%;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+}
+nav a{
+    color: #FFF;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes blink {
+    0% { color: #ff951c; }
+    50% { color: #1cffc2; }
+    75% { color: #1cffc2; }
+    100% { color: #ff951c; }
+}
+
+header h1 {
+    color: #1cffc2;
+    animation: blink 1s infinite;
+}
+
+
+section{
+    width: 100%;
+    height: calc(100% - 80px);
+    /* background-color:#b98585 ; */
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    column-gap: 20px;
+}
+div.picture{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue; */
+    padding: 0px;
+}
+div.picture img{
+    position: absolute;
+    bottom: -9px;
+    height: 900px;
+    left: 0px;
+}
+
+div.about{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-image: url(back.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-y: 50px;
+    background-position-x: 40px;
+    
+    /* background-color: aliceblue; */
+}
+.picture h1{
+    color: #FFF;
+    font-size: 90pt;
+    width: 800px;
+    text-align: right;
+    /* background-color: #1cffc2; */
+    margin: 0px;
+    margin-left: 200px;
+}
+.about h2{
+    text-align: left;
+    color: #1cffc2;
+    width: 100%;
+}
+.about p{
+    text-align: justify;
+    color: #FFF;
+}
+.about button{
+    width: 120px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #1cffc2;
+    cursor: pointer;
+}
+.about button:hover{
+    transition: 0.5s;
+    background-color: #0fad83;
+    color: #FFF;
+}
+p.hashtag{
+    color: #1cffc2;
+}
+aside#meio{
+    display: flex;
+    flex: row;
+    padding: 20px;
+    box-sizing: border-box;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+aside#meio section{
+    width: 30%;
+    height: 80%;
+    /* background-color: #1cffc2; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+section#sobremim{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    height: 100%;
+
+}
+section#sobremim h1{
+    font-size: 22pt;
+    color: #1cffc2;
+    margin: 0px;
+}
+section#sobremim h2{
+    color: #777777;
+    margin: 0px;
+}
+section#sobremim p{
+    text-align: justify;
+    color: #FFF;
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    text-indent: 20px;
+}
+section#sobremim span{
+    color: #1cffc2;
+}
+/* -- outro section --*/
+
+section#diferenciais{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    height: 100%;
+
+}
+section#diferenciais h1{
+    font-size: 22pt;
+    color: #1cffc2;
+    margin: 0px;
+}
+section#diferenciais h2{
+    color: #777777;
+    margin: 0px;
+}
+section#diferenciais p{
+    text-align: justify;
+    color: #FFF;
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    text-indent: 20px;
+}
+
+/* -- outro section --*/
+
+section#futuro{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    height: 100%;
+
+}
+section#futuro h1{
+    font-size: 22pt;
+    color: #1cffc2;
+    margin: 0px;
+}
+section#futuro h2{
+    color: #777777;
+    margin: 0px;
+}
+section#futuro p{
+    text-align: justify;
+    color: #FFF;
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    text-indent: 20px;
+}
+aside#fim{
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #222222;
+}
+aside#fim h1{
+    font-size: 22pt;
+    color: #1cffc2;
+    margin: 0px;
+}
+aside#fim h2{
+    color: #777777;
+    margin: 0px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.group {
+    width: 30%; /* Ajusta a largura para 3 grupos */
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #444;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #1cffc2;
+    height: 20px;
+    border-radius: 25px;
+}
+h3{
+    color: #FFF;
+}
+p{
+    text-align: justify;
+    color: #FFF;
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+span{
+    color: #1cffc2;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    border-top: solid 0.5px #1cffc2;
+    bottom: 0px;
+    display: flex;
+    color: #1cffc2;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+footer a {
+    color: #1cffc2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+aside#icones{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1b1b;
+    row-gap: 20px;
+}
+aside#icones h2{
+    margin: 0px;
+    color:#1cffc2;
+}
+aside#icones p{
+    color: #1cffc2;
+    overflow: hidden;
+}
